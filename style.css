@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    max-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    font-size: 20px;
+    background-color: black;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    background-color: black;
+    padding: 50rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
