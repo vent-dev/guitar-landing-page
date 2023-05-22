@@ -1,3 +1,36 @@
 body {
     min-height: 100vh;
 }
+
+.nav {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.nav ul, .nav li, a {
+    display: flex;
+    gap: 35px;
+}
+
+.github {
+    margin-left: auto;
+}
+
+.nav .logo {
+    margin-right: auto;
+}
+
+.nav li {
+    border: solid 2px white;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
