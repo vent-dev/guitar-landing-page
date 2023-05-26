@@ -1,36 +1,59 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYnNpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60) no-repeat;
+}
+
+@font-face {
+    font-family: anton-regular;
+    src: url(Anton-Regular.ttf);
 }
 
 .nav {
     display: flex;
-    background-color: black;
-    justify-content: center;
-    padding: .5rem;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.75em;
 }
 
-.nav ul, .nav li, a {
+.nav > ul {
     display: flex;
-    gap: 35px;
+    gap: 15px;
+    padding: 0;
 }
 
-.github {
-    margin-left: auto;
+.nav > ul > li {
+    list-style-type: none;
 }
 
-.nav .logo {
-    margin-right: auto;
-}
-
-.nav li {
-    border: solid 2px white;
-    padding: 10px 20px 10px 20px;
-}
-
-.nav a {
+.nav > ul > li > a {
     text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: 25px;
+    color: black;
 }
 
+.logo {
+    font-family: anton-regular, sans-serif;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    background-color: rgba(100, 100, 100, .7);
+    gap: 5px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.content-container div {
+    padding-bottom: 300px;
+    background-color: red;
+}
